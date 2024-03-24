@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --watch hono/server.ts",
+    "start": "deno run --allow-net --allow-read hono/server.ts"
+  },
+  "imports": {
+    "@oak/oak": "jsr:@oak/oak@14.2.0",
+    "@std/dotenv": "jsr:@std/dotenv@0.220.1",
+    "hono": "https://deno.land/x/hono@v4.1.3/mod.ts",
+    "hono/middleware": "https://deno.land/x/hono@v4.1.3/middleware.ts"
+  }
+}
