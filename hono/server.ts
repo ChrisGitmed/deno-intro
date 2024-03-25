@@ -8,7 +8,6 @@ import {
 import { Config } from '../config/index.ts';
 
 
-
 const app = new Hono()
   .use('*', logger(), poweredBy())
   .get('/', (context: any) => context.json({ message: 'Success' }, 200))

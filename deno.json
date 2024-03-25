@@ -1,7 +1,7 @@
 {
   "tasks": {
-    "dev": "deno run --allow-net --allow-read --watch hono/server.ts",
-    "start": "deno run --allow-net --allow-read hono/server.ts"
+    "hono": "deno run --allow-net --allow-read --watch hono/server.ts",
+    "oak": "deno run --allow-net --allow-read --watch oak/server.ts"
   },
   "imports": {
     "@oak/oak": "jsr:@oak/oak@14.2.0",
