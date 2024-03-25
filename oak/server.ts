@@ -6,12 +6,18 @@ import { Config } from '../config/index.ts';
 
 
 const router = new Router();
-router.get('/', (context: any) => context.json({ message: 'Success' }));
+router.get('/', (context: any) => {
+  context.response.status = 200;
+  context.response.body = { message: 'Success' };
+});
 
 const app = new Application()
   .use(router.routes())
   .use(router.allowedMethods())
-  .listen({ port: Config.port });
+  .use((context: any) => {
+    context.response.status = 404;
+    context.response.body = { message: 'Route not found' };
+  }).listen({ port: Config.port });
 
-  
+
 export { app };
