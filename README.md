@@ -2,21 +2,20 @@
 Simple web server built with Deno, Hono and Oak frameworks.
 
 
-## Things I wanna try
-- Using `fetch` [https://docs.deno.com/runtime/manual/getting_started/first_steps#built-in-web-apis-and-the-deno-namespace]
--
-
-
 ## Things I like about Deno
 - Built-in Typescript support
-- Implements web standard APIs that exist in front-end JavaScript, like the `fetch` API available in the global scope.
+- No need to compile TS to JS in order to run
+- Implements web standard APIs that exist in front-end JavaScript, like the `fetch` API available in the global scope. (can ditch axios!)
 - No node modules!
+- Fetch uses streaming by default
 
 ## Things I like about Hono
 - 
 
 ## Things I like about Oak
-- 
+- Easy to write middleware
+- Simple context object instead of req and res
+
 
 
 ## Things I do not like about Deno
@@ -26,4 +25,4 @@ Simple web server built with Deno, Hono and Oak frameworks.
 - 
 
 ## Things I do not like about Oak
-- 
+- Documentation is scarce compared to node/express
